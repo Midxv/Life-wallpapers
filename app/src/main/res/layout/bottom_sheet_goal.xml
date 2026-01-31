@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#111111"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Your Goal"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 Week"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 Month"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 Year"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Duration"
+        android:backgroundTint="#444444"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="#222222"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap number to edit manually"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvCustomDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100 Days"
+            android:textColor="#FF4444"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="365"
+            android:progress="100"
+            android:progressTint="#FF4444"
+            android:thumbTint="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnApplyCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Custom Goal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF4444"/>
+    </LinearLayout>
+
+</LinearLayout>

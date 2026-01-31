@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIFE WALLPAPERS"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Journey in Pixels"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set a goal, customize the layout, and track your progress daily."
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnSetGoal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Set a Goal"
+        android:backgroundTint="#222222"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Edit Layout"
+        android:backgroundTint="#333333"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnOpenWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Set Live Wallpaper"
+        android:backgroundTint="#500CCC"
+        android:textStyle="bold"/>
+
+</LinearLayout>
